@@ -8,7 +8,13 @@
                 <!-- CSS Files -->
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.1/css/all.min.css"/>
     <link rel="stylesheet" href="css/skins/color.css">                
-    <link rel="stylesheet" href="css/style.css">                
+    <link rel="stylesheet" href="css/style.css">          
+                <!-- Style switcher -->
+    <link rel="stylesheet" href="css/skins/color.css" class="alternate-style" title="color-1" disabled>                
+    <link rel="stylesheet" href="css/skins/color1.css" class="alternate-style" title="color-2" disabled>                
+    <link rel="stylesheet" href="css/skins/color2.css" class="alternate-style" title="color-3" disabled>                
+    <link rel="stylesheet" href="css/skins/color3.css" class="alternate-style" title="color-4" disabled>                
+    <link rel="stylesheet" href="css/skins/color4.css" class="alternate-style" title="color-5" disabled>                
     <link rel="stylesheet" href="css/style-switcher.css">                
 </head>
 <body>
@@ -23,18 +29,18 @@
                 <span></span>
             </div>
             <ul class="nav">
-                <li><a href="#" class="active"><i class="fas fa-home"></i>Home</a></li>
-                <li><a href="#"><i class="fas fa-user"></i>About</a></li>
-                <li><a href="#"><i class="fas fa-list"></i>Services</a></li>
-                <li><a href="#"><i class="fas fa-briefcase"></i>Portfolio</a></li>
-                <li><a href="#"><i class="fas fa-comments"></i>Contact</a></li>
+                <li><a href="#home" class="active"><i class="fas fa-home"></i>Home</a></li>
+                <li><a href="#about"><i class="fas fa-user"></i>About</a></li>
+                <li><a href="#services"><i class="fas fa-list"></i>Services</a></li>
+                <li><a href="#portfolio"><i class="fas fa-briefcase"></i>Portfolio</a></li>
+                <li><a href="#contact"><i class="fas fa-comments"></i>Contact</a></li>
             </ul>
         </div>        
                 <!-- Aside End -->
                 <!-- Main Content Start -->
         <div class="main-content">
                 <!-- Home Section Start -->
-            <section class="home section">
+            <section class="home active section" id="home">
                 <div class="container">
                     <div class="row">
                         <div class="home-info padd-15">
@@ -42,7 +48,7 @@
                             <h3 class="my-profession">I' m a <span class="typing">web developer</span></h3>
                             <p>I'm Lorem ipsum, dolor sit amet consectetur adipisicing elit. Dignissimos corporis quae blanditiis nam dolore. Dolor laboriosam quibusdam voluptatibus mollitia...
                             </p>
-                            <a href="#contact" class="btn hire-me">Hire Me</a>
+                            <a href="#" class="btn hire-me">Download CV</a>
                         </div>
                         <div class="home-img padd-15">
                             <img src="images/1667668918220.jfif" alt="">
@@ -52,7 +58,7 @@
             </section>    
                 <!-- Home Section End -->
                 <!-- About Section Start -->
-            <section class="about section ">
+            <section class="about section" id="about">
                 <div class="container">
                     <div class="row">
                         <div class="section-title padd-15">
@@ -97,8 +103,7 @@
                                     </div>
                                     <div class="row">
                                         <div class="buttons padd-15">
-                                            <a href="" class="btn">Download CV</a>
-                                            <a href="#contact" class="btn hire-me">Hire Me</a>
+                                            <a href="#contact" data-section-index="1" class="btn hire-me">Hire Me</a>
                                         </div>
                                     </div>
                                 </div>
@@ -234,7 +239,7 @@
             </section>    
                 <!-- About Section End -->
                 <!-- Services Section Start -->
-            <section class="service section">
+            <section class="service section" id="services">
                 <div class="container">
                     <div class="row">
                         <div class="section-title padd-15">
@@ -303,7 +308,7 @@
             </section>
                 <!-- Services Section End -->
                 <!-- Portfolio Section Start -->
-            <section class="portfolio section">
+            <section class="portfolio section" id="portfolio">
                 <div class="container">
                     <div class="row">
                         <div class="section-title padd-15">
@@ -365,7 +370,7 @@
             </section>
                 <!-- Portfolio Section End -->
                 <!-- Contact Section End -->
-            <section class="contact section">
+            <section class="contact section" id="contact">
                 <div class="container">
                     <div class="row">
                         <div class="section-title padd-15">
@@ -401,7 +406,7 @@
                     <h3 class="contact-title padd-15">SEND ME AN EMAIL</h3>
                     <h4 class="contact-sub-title padd-15">I'M VERY RESPONSIVE TO MESSAGES</h4>
                                 <!-- Contact form  -->
-                    <div class="row">
+                    <div class="row">   
                         <div class="contact-form padd-15">
                             <div class="row">
                                 <div class="form-item col-6 padd-15">
@@ -447,10 +452,10 @@
                 <!-- Style switcher start  -->
     <div class="style-switcher">
         <div class="style-switcher-toggler s-icon">
-            <i class="fas fa-cog fa-skin"></i>
+            <i class="fas fa-cog fa-spin"></i>
         </div>
         <div class="day-night s-icon">
-            <i class="fas fa-moon"></i>
+            <i class="fas "></i>
         </div>
         <h4>Theme Colors</h4>
         <div class="colors">
@@ -463,6 +468,8 @@
     </div>            
                 <!-- Style switcher end  -->
                 <!-- JS Files -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/typed.js/2.0.12/typed.min.js"></script>
     <script src="js/script.js"></script>                
+    <script src="js/style-switcher.js"></script>                
 </body>
 </html>
